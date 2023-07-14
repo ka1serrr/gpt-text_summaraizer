@@ -1,11 +1,11 @@
-import { useState, useEffect, FormEvent } from 'react';
-import { linkIcon, tick } from '@/assets';
+import { useState, FormEvent } from 'react';
+import { linkIcon } from '@/assets';
 import styles from './Demo.module.scss';
 import { IArticle } from '@/common.types';
 import { History } from '../History/History';
 import { useLazyGetSummaryQuery } from '@/slces/article/article';
-import { useDispatch, useSelector } from 'react-redux';
-import { addArticle, getArticlesFromLS } from '@/slces/allArticles/allArticles';
+import { useDispatch } from 'react-redux';
+import { addArticle } from '@/slces/allArticles/allArticles';
 import { Result } from '../Result/Result';
 
 export const Demo = () => {

@@ -1,5 +1,4 @@
 import { IArticle } from '@/common.types';
-import { TypeRootState } from '@/store/store';
 import { Dispatch, FC, SetStateAction, useState } from 'react';
 import { copy, tick } from '@/assets';
 import styles from './History.module.scss';

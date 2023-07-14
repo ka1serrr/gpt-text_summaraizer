@@ -1,23 +1,20 @@
-import { IArticle } from "@/common.types";
-import { IAllArticles } from "./allArtilces.types";
-import { createSlice } from '@reduxjs/toolkit'
-import type { PayloadAction } from '@reduxjs/toolkit'
+import { IArticle } from '@/common.types';
+import { IAllArticles } from './allArtilces.types';
+import { createSlice } from '@reduxjs/toolkit';
+import type { PayloadAction } from '@reduxjs/toolkit';
 
 const initialState: IAllArticles = {
-  articles: []
-}
+  articles: [],
+};
 
 export const articlesSlice = createSlice({
   name: 'articles',
   initialState,
   reducers: {
     addArticle(state, action: PayloadAction<IArticle>) {
-      state.articles.push(action.payload)
+      state.articles.push(action.payload);
     },
-    getArticlesFromLS(state, action: PayloadAction<IArticle[]>) {
-      state.articles = action.payload
-    }
-  }
-})
+  },
+});
 
-export const { addArticle, getArticlesFromLS } = articlesSlice.actions
+export const { addArticle } = articlesSlice.actions;
