@@ -1,0 +1,11 @@
+.history {
+  @apply flex flex-col gap-1 max-h-72 overflow-y-auto
+}
+
+.copyIcon {
+  @apply w-[40%] h-[40%] object-contain
+}
+
+.url {
+  @apply flex-1 font-satoshi text-blue-700 font-medium text-sm truncate
+}

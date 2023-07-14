@@ -1,0 +1,27 @@
+.result {
+  @apply my-10 max-w-full flex justify-center items-center
+}
+
+.loader {
+  @apply w-20 h-10 object-contain
+}
+
+.error {
+  @apply font-inter font-bold text-black text-center
+}
+
+.errorMessage {
+  @apply font-satoshi font-normal text-gray-700
+}
+
+.articleSummary {
+  @apply flex flex-col gap-3
+}
+
+.summaryTitle {
+  @apply font-satoshi font-bold text-gray-600 text-xl
+}
+
+.summaryText {
+  @apply font-inter font-medium text-sm text-gray-700
+}
