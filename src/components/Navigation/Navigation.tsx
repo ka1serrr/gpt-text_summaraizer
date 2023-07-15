@@ -6,7 +6,11 @@ export const Navigation = () => {
     <nav className={styles.navigation}>
       <img src={logo} alt='logo' className={styles.logo} />
 
-      <button type='button' onClick={() => window.open('https://github.com/ka1serrr')} className='black_btn'>
+      <button
+        type='button'
+        onClick={() => window.open('https://github.com/ka1serrr/gpt-text_summaraizer')}
+        className='black_btn'
+      >
         GitHub
       </button>
     </nav>
